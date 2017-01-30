@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <style>
-    <%@include file='../../WEB-INF/pages/style.css' %>
+    <%@include file='../updated_pages/css/style1.css' %>
 </style>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>

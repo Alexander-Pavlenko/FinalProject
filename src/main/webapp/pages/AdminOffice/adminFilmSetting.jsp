@@ -10,7 +10,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
     <%@include file='styleWindow.css' %>
-    <%@include file='../../WEB-INF/pages/style.css' %>
+    <%@include file='../updated_pages/css/style1.css' %>
 </style>
 <script type="text/javascript">
     function show(state) {
