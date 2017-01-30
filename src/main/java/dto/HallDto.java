@@ -55,7 +55,6 @@ public class HallDto extends Entity<Integer> {
             catch (StatusException se){
 
             }
-            return null;
         }
         List<TicketDto> ticketDtos = new ArrayList<>();
         for (Place place : list) {
