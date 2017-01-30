@@ -24,8 +24,8 @@ public class RegisterServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserDto userDto = createUser(req);
-        UserServiceImpl.getInstance().save(userDto);
-        System.out.println("User " + userDto.getId() + "Create");
+        userDto = UserServiceImpl.getInstance().save(userDto);
+        System.out.println("User " + userDto.getId() + " Create");
 
         req.getRequestDispatcher("/HomePage").forward(req,resp);
     }
@@ -38,6 +38,7 @@ public class RegisterServlet extends HttpServlet{
         userDto.setLastName(req.getParameter("lastName"));
         userDto.setPassword(req.getParameter("password"));
         userDto.setClient(true);
+        userDto.setMoney(1000);
         return userDto;
     }
 }

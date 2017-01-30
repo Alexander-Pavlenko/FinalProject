@@ -49,6 +49,7 @@ public class UserServiceImpl implements Service<Integer, UserDto> {
     @Override
     public UserDto save(UserDto userDto) {
         User user = beanMapper.singleMapper(userDto, User.class);
+        user.setClient(userDto.getIsClient());
         userDao.save(user);
         return userDto;
     }
